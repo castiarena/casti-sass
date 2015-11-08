@@ -1,0 +1,16 @@
+{
+  "name": "casti-sass",
+  "homepage": "https://github.com/castiarena/casti-sass",
+  "description": "Libreria de sass para generar css, snippers de responsive y demas",
+  "main": "sass/style.scss",
+  "moduleType": [],
+  "keywords": [
+    "sass",
+    "bootstrap",
+    "responsive"
+  ],
+  "authors": [
+    "Agustin Castiarena"
+  ],
+  "license": "MIT"
+}
