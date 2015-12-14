@@ -1,0 +1,31 @@
+/**
+* font generator
+*
+* $nombre: es la variante tipografica
+* $base: preseteada para buscar en el root la carpeta fonts/helvetica
+* return : mixed css para compilar fontface
+*/
+
+@mixin font($nombre){
+  $base: '../fonts/helvetica';
+  font-family: 'HelveticaNeue-#{$nombre}';
+  src: url('#{$base}/HelveticaNeue-#{$nombre}.eot');
+  src: local('☺'), url('#{$base}/HelveticaNeue-#{$nombre}.woff') format('woff'), url('#{$base}/HelveticaNeue-#{$nombre}.ttf') format('truetype'), url('#{$base}/HelveticaNeue-#{$nombre}.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/**
+* font-face generator
+*
+* $nombre: es la variante tipografica
+* $base: preseteada para buscar en el root la carpeta fonts/helvetica
+* return : mixed css para compilar fontface
+*/
+
+@mixin font-face($nombre){
+  @font-face {
+    @include font($nombre);
+  }
+}
